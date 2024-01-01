@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4" project_name="Project">
+    <include path="test_groot.xml"/>
+    <!-- Description of Node Models (used by Groot) -->
+    <TreeNodesModel>
+        <Decorator ID="Cooldown" editable="true">
+            <input_port name="Delay"/>
+        </Decorator>
+        <Action ID="GetPlanetSize" editable="true">
+            <input_port name="planet"/>
+            <output_port name="out0"/>
+        </Action>
+        <Action ID="GetRandomAllyPlanet" editable="true">
+            <output_port name="out0"/>
+        </Action>
+        <Action ID="GetRandomEnemyPlanet" editable="true">
+            <output_port name="out0"/>
+        </Action>
+        <Action ID="GetRandomNeutralPlanet" editable="true">
+            <output_port name="out0"/>
+        </Action>
+        <Action ID="GetRandomPlanetNotMine" editable="true">
+            <output_port name="out0"/>
+        </Action>
+        <Action ID="LogMessage" editable="true">
+            <input_port name="message"/>
+        </Action>
+        <Action ID="RandomIntRange" editable="true">
+            <input_port name="in0"/>
+            <input_port name="in1"/>
+            <output_port name="out0"/>
+        </Action>
+        <Action ID="SendShips" editable="true">
+            <input_port name="planet1"/>
+            <input_port name="planet2"/>
+            <input_port name="size"/>
+        </Action>
+        <Action ID="SpreadToWeakestClosestPlanet" editable="true"/>
+    </TreeNodesModel>
+</root>

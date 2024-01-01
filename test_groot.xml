@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4">
+  <BehaviorTree ID="AlwaysSuccessTree">
+    <AlwaysSuccess/>
+  </BehaviorTree>
+
+  <BehaviorTree ID="WeakSpreadTree">
+    <Sequence>
+      <Repeat num_cycles="68">
+        <Cooldown Delay="4">
+          <SpreadToWeakestClosestPlanet/>
+        </Cooldown>
+      </Repeat>
+    </Sequence>
+  </BehaviorTree>
+
+  <!-- Description of Node Models (used by Groot) -->
+  <TreeNodesModel>
+    <Decorator ID="Cooldown"
+               editable="true">
+      <input_port name="Delay"/>
+    </Decorator>
+    <Action ID="SpreadToWeakestClosestPlanet"
+            editable="true"/>
+  </TreeNodesModel>
+
+</root>
